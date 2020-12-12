@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".PhuKien">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+
+       >
+       <EditText
+           android:id="@+id/edSearch"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Tìm phụ kiện theo tên"
+           android:drawableRight="@drawable/ic_baseline_search_24"
+           android:drawablePadding="5dp"
+           />
+       <GridView
+           android:id="@+id/gridLinhKien"
+           android:numColumns="2"
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+   </LinearLayout>
+
+</LinearLayout>

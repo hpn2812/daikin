@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAccount">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imglogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imglogo"
+                android:layout_margin="5dp"
+                android:text="Huỳnh Phong Nhã"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txtuserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="hpn1602"
+                android:layout_toRightOf="@id/imglogo"
+                android:layout_below="@+id/txtname"
+                android:layout_margin="5dp"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardv1">
+
+        <TextView
+            android:id="@+id/txtCaiDat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_settings_24"
+            android:drawablePadding="10dp"
+            android:padding="15dp"
+            android:text="Cài đặt" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv3"
+        android:layout_below="@id/cardv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Câu hỏi thường gặp"
+                android:drawableStart="@drawable/ic_baseline_swap_horizontal_circle_24"
+                android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Gửi phản hồi"
+                android:drawableStart="@drawable/ic_baseline_feedback_24"
+                android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Trung tâm hỗ trợ"
+                android:drawableStart="@drawable/ic_baseline_support_agent_24"
+                android:drawablePadding="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Thông tin hỗ trợ"
+                android:drawableStart="@drawable/ic_baseline_settings_24"
+                android:drawablePadding="10dp"/>
+            <Button
+                android:id="@+id/btdangxuat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:padding="5dp"
+                android:text="Đăng xuất"
+                android:drawableStart="@drawable/ic_baseline_info_24"
+                android:drawablePadding="10dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

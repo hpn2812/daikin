@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".baotri"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2E9AFE">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt dịch vụ bảo trì"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bong"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Thông tin liên hệ"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ông Huỳnh Phong Nhã -0937203604"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="02 Thanh sơn,P.Thanh Bình,Q.Hải Châu,TP.Đà Nẵng"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vui lòng cập nhật thông tin liên hệ chính xác"
+                    android:textColor="#FF0000"
+                    android:background="#F5A9A9"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_info_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#FF0000"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đặt gói dịch vụ"/>
+                <GridView
+                    android:id="@+id/gridbt"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:numColumns="3">
+
+                </GridView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#E6E6E6"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gói dịch vụ bao gồm:"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Dịch vụ vệ sinh tiêu chuẩn 15 bước -Daikin,có khử khuẩn bằng hới nước nóng"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Phin lọc khánh thể sinh học (Thời gian sử dụng 3 tháng)"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="- Phin lọc khánh thể sinh học ngừa vi khuẩn , nấm mốc và loại bỏ chủng loại virus cúm: chủng A và B (H1N1,H5N1,H7N9...) -chưa được kiểm nghiệm hiệu quả với virus Corona"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Đơn giá (chưa VAT):"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Máy điều hòa treo tường 650.000 VND/máy"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Máy điều hòa âm trần  1.200.000 VND/máy"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn loại thiết bị"
+                android:layout_margin="10dp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              android:entries="@array/spinner_items"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bong"
+                android:backgroundTint="#2E9AFE"
+                android:text="Gửi yêu cầu"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

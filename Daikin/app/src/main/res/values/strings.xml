@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Daikin</string>
+    <string-array name="spinner_items">
+        <item>Máy điều hòa treo tường</item>
+        <item>Máy lọc không khí</item>
+        <item>Máy điều hòa Multi</item>
+        <item>Máy điều hòa VRV</item>
+    </string-array>
+</resources>

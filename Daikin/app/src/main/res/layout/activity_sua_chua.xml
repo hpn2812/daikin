@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".baotri"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#2E9AFE">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt dịch vụ Sửa chữa"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bong"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Thông tin liên hệ"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ông Huỳnh Phong Nhã -0937203604"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#000"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="02 Thanh sơn,P.Thanh Bình,Q.Hải Châu,TP.Đà Nẵng"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#000"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vui lòng cập nhật thông tin liên hệ chính xác"
+                    android:textColor="#FF0000"
+                    android:background="#F5A9A9"
+                    android:layout_margin="5dp"
+                    android:drawableStart="@drawable/ic_baseline_info_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="#FF0000"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn loại thiết bị"
+                android:layout_margin="10dp"/>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/spinner_items"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Mô tả yêu cầu"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã khuyến mãi"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="4">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#0080FF"
+                    android:text="Áp dung"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bong"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#2E9AFE"
+                android:text="Gửi yêu cầu"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

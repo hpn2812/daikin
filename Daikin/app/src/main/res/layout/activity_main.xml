@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".SplashScreen">
+
+   <TextView
+       android:id="@+id/txtTiengViet"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="200dp"
+       android:text="Tiếng Việt"
+       android:textStyle="bold"
+       android:textColor="#0101DF"/>
+
+    <TextView
+        android:id="@+id/txtTiengAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Tiếng Anh"
+        android:layout_toRightOf="@+id/txtTiengViet"/>
+    <ImageView
+        android:id="@+id/imgDaikinLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daikinlogo"
+        android:layout_below="@id/txtTiengViet"
+
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:id="@+id/txtXinChao"
+        android:layout_below="@+id/imgDaikinLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xin chào"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/edSdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số điện thoại"
+        android:layout_below="@id/txtXinChao"/>
+
+
+    <Button
+        android:id="@+id/btnTiepTuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSdt"
+        android:layout_marginTop="15dp"
+        android:text="Tiếp tục"
+        />
+
+    <TextView
+        android:id="@+id/txtBanQuyen"
+        android:layout_below="@+id/btnTiepTuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bản quyền ® 2019 Huỳnh Nhã"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+
+</RelativeLayout>
